@@ -10,6 +10,30 @@
   max-width: 1320px !important;
 }
 
+/* sticky-header-code */
+.header{
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.header.is-sticky{
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  animation: slideDown 0.85s ease-out;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* header-code */
 
 .rotate-eff:hover i, .cmd-btn:hover i, .under-text:hover i {
